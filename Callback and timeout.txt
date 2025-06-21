@@ -1,0 +1,10 @@
+//Call back fuction 
+// jo fucntion ke andar call hota
+function product(a,b,c){
+    return a*b*c;
+}
+function fun(x,y){ 
+    num=x(1,2,3);// x is the fucntion and y is the value
+    console.log(num-y);
+} //This is the callback function
+fun(product,4);

@@ -1,0 +1,23 @@
+let arr=[3,2,1,4,6,5,7,8,9,10,11,12,13,14,15,16];
+console.log(arr);
+brr=arr.map(ele=>ele*2);
+
+// Now move to filter part
+trr=arr.filter(function(ele){
+    if(ele%2!=0){
+        return true;
+    }
+    else{
+        return false;
+    }
+});
+console.log(trr); 
+arr=arr.filter(ele=>(ele<7));
+console.log(arr); //print the odd elements
+
+
+//Redeuce part lets move to it 
+arr=arr.reduce(function(a,b){
+    return a*b;
+})
+console.log(arr);

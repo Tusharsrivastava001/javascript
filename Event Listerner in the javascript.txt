@@ -1,0 +1,35 @@
+Event Listerner in the javascript
+
+let x=document.getElementById("ele1"); // x is the pikachau
+x.addEventListener("click",function(){ // ham yaha click karege toh change hoga
+    x.style.color="yellow";
+    x.style.backgroundColor="Red";
+});
+x.addEventListener("mouseleave",function(){ // ham yaha click karege toh change hoga
+    x.style.color="black";
+    x.style.backgroundColor="white";
+});
+let y=document.getElementById("ele2"); // x is the pikachau
+y.addEventListener("mouseenter",function(){ // ham yaha hoverkarenge toh changer hoga
+    y.style.color="white";
+    y.style.backgroundColor="orange";
+});
+y.addEventListener("click",function(){
+    x.innerHTML="quak";
+    x.style.color="black";
+    x.style.backgroundColor="green";
+});
+y.addEventListener("mouseleave",function(){ // ham yaha hoverkarenge toh changer hoga
+    y.style.color="black";
+    y.style.backgroundColor="white";
+});
+let z=document.getElementById("ele3");
+y.addEventListener("click",function(){ // ham yaha hoverkarenge toh changer hoga
+    z.style.color="black"; // jab ham ele2 ko click karu toh ele3 ke element me change aae
+    z.style.backgroundColor="purple";
+});
+z.addEventListener("click",function(){
+    z.innerHTML="Squadual";
+    z.style.color="white";
+    z.style.backgroundColor="GREEN";
+})

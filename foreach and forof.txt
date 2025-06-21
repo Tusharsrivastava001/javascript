@@ -1,0 +1,28 @@
+// const arr=[1,2,4,4,7]; // Const: we cann't reassign any value to arr
+// arr[0]=9;
+// console.log(arr);
+// arr=2.4;
+// console.log(arr);
+arr2=[1,2,3,4,6,7];
+for(let i=0;i<arr2.length;i++){
+    arr2[i]*=2;
+}
+console.log(arr2);
+// arr=[3,"Jogn",3.14,'q',[1,23,456,6]];// we can crete the arr with the multiple data type
+// // for of loop 
+// console.log(typeof(arr));
+// for(const ele of arr){ // way of accessing the element
+//     console.log(ele);
+// }
+for(let ele of arr2){
+    ele*=2;
+    console.log(ele);
+}
+console.log(arr2);
+
+// foreach method
+arr2.forEach((ele,i)=>{ // here we cab give the index of the arrat and by default it start form zero here
+    console.log(ele,i);
+})
+
+

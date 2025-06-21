@@ -1,0 +1,12 @@
+a="joey copper is the good trader";
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+console.log(a.trim()); // aage ke and peeche ke space ko trim kar deta hai
+console.log(a.lastIndexOf('e'));
+console.log(a.charAt(8));
+console.log(a.slice(3,7)); // print all the from the 3 index if a.slice(3)
+b=a.slice(3,7); // sub string 
+console.log(b);
+// And a.slice(3,8); 3 is not included and also 7 is not included
+arr=a.split(' '); //space wise split karega
+console.log(arr);

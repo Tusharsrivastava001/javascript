@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Printingtheloop { // printingtheloop is the class name
+    public static void main(String[] args){ // String[] args is the command line input
+        // Bubble sort algorithn
+        Scanner sc=new Scanner(System.in); // Way to take input java.util.Scanner is important
+        int n;
+        n=sc.nextInt(); // to read the inout 
+        int[] arr=new int[n]; // creation of array with the size 5
+        for(int i=0;i<n;i++) arr[i] = sc.nextInt();
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}

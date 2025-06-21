@@ -1,0 +1,19 @@
+
+// let arr1=new Array(); // ceration of array using arrary construtor
+// // empty array;
+// let arr2=new Array(5); //
+// let arr3=[];// 
+let arr=[1,2,4,5,4];
+console.log(arr);
+arr.push(10); //  at the end
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.unshift(10); // add element in the begnining
+console.log(arr);
+arr.shift(); // remove the first element
+console.log(arr);
+// console.log(n);
+// for(let i=0;i<n;i++){
+//     console.log(arr[i]);
+// }

@@ -1,0 +1,16 @@
+// let a=10; // here a is fixed constant we can't change the value
+// // var a=10; //here we can change the value of a
+// console.log(a);
+// a=6;
+// console.log(a);
+// // javascipt print the value and then show the error that this con cann't be change 
+// // in cpp it show the error and not even print the value
+// Redefinaton is allowed in the Javascript
+var a=10;
+console.log(a);
+var a=12;
+console.log(a);
+
+// let is basicallt scope valid inside only the scoep 
+// var is access outside the scope 
+//  cosnt can't be reassinged

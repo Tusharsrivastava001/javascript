@@ -1,0 +1,11 @@
+a="John is trader";
+console.log(a,a.length);
+arr=new Array();
+a.split('').forEach((ele)=>{
+    console.log(ele);
+    arr.push(ele);
+});
+b="Content";
+for(const char of b){
+    console.log(char);
+}
