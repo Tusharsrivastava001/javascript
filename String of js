@@ -1,0 +1,35 @@
+let str1="john   ";
+let str2="wick";
+let str3=`this is the template iterals`;
+let com=str1+" "+str2;
+console.log(com);
+
+let combi=`${str1} ${str2}`;
+console.log(combi);
+
+console.log(str1.length);
+
+//we can aslo accesing the each charcter of string
+console.log(str1[0]);
+console.log(str2[1]);
+//to at specific positioon 
+console.log(str1.charAt(1));
+console.log(str1.toUpperCase());
+console.log(str1.toLowerCase());
+console.log(str1.includes("hello")); // it check it's included in the string
+console.log(str1.startsWith("tu"));  // check the string start with tu 
+console.log(str2.endsWith("rt"));
+console.log(str1.indexOf("S"));
+console.log(str1.slice(0,2));
+console.log(str1.trim());
+console.log(str1.replace("john","alexi"));
+
+console.log("ha ".repeat(3));
+
+let stru1="aliexi";
+
+for(let ch of stru1){
+    console.log(ch);
+}
+let num=123;
+let numi=String(num);
