@@ -1,0 +1,90 @@
+function greet(){
+    console.log("Hello, Tushar!");
+}
+greet();
+
+const de=function(){
+    console.log("Hell from this part");
+}
+
+//here function with the paramter
+function add(a,b){
+    return a+b;
+}
+console.log(add(12,3));
+
+//function with the default parameter
+
+function greeto(name="Guest"){
+    console.log("Hello + "+name);
+}
+greeto();
+greeto("shivam");
+
+//function to calculate the square
+function square(n){
+    return n*n;
+}
+console.log(square(4));
+
+
+//anoymous function
+//those functino are without the name
+//used for the callbacks or expression
+setTimeout(function(){
+
+    console.log("Hello after the 2 sec");
+},1000);
+
+//Arrow function 
+const addi = (a,b) => {
+    return a + b;
+}
+console.log(addi(3,4));
+
+
+//function with the block scope
+function example(){
+    let a=10;
+    let b=20;
+    console.log(a);
+    console.log(b);
+}
+example();
+
+function outer(){
+    let count=0;
+    return function inner(){
+        count++;
+        console.log(count);
+    }
+}
+
+const counter=outer();
+counter();
+counter();
+
+//function that take othet functin as argment
+function greetq(name){
+    return function (message){
+        console.log(`Hello ${name},${message}`);
+    }
+}
+const greeter=greetq("john");
+greeter("tum kaise ho");
+
+
+//callback functio 
+function localdata(callback){
+    console.log("loading data .... ");
+    callback();
+}
+
+localdata(()=>console.log("data loaded"))
+
+
+function fact(n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+console.log("fact 5 ki value: "+fact(5));
