@@ -1,0 +1,107 @@
+//here we are learning the array;
+let fruits=["apple","banana","grapes"];
+console.log(fruits[0]);
+//here tumhara ye fruist ek referace hai jo data storeo ho raha ahi 
+//heap memomry ke andar 
+let arr=[];//here is the empty array
+let number=[1,2,3,40];
+let mix=[1,"helo",true,null];
+fruits[1]="kiwi";
+console.log(fruits[1]);
+
+//first we talk about some object
+let obj={
+    name : "joohn",
+    age: 21,
+    weight: 85,
+    height: "5 8in",
+   greet: function(){
+    console.log("This is the functin inside the object");
+   }
+};
+console.log(obj);
+obj.greet();
+
+console.log(typeof(obj));
+
+
+let arr1=[11,2,8];
+arr1.push(40);
+arr1.push(50);
+console.log(arr1);
+arr1.pop();
+console.log(arr1);
+
+arr1.shift(); // to reomove the element in the start or end 
+console.log(arr1);
+arr1.unshift(55); 
+console.log(arr1); //to add the element in the start
+
+
+//to remove the elements from 1 2 
+arr1.splice(1,2);
+console.log(arr1);
+
+//1 index pe jo 40 hai wah par 99 dal do
+arr1.splice(1,40,99);
+console.log(arr1);
+
+// arr1.splice(1,0,"banana","cherry");
+// console.log(arr1);
+
+
+//array mutating 
+arr1.push(420);
+arr1.push(50);
+
+console.log(arr1);
+let cr=arr1.slice(1,2);
+console.log(cr);
+
+//merger the arry 
+let mer=arr1.concat([4,5]);
+console.log(mer);
+
+arr1.indexOf(55);
+console.log(arr1.indexOf(55));
+
+//interatin 
+arr1.forEach((item,i)=>{ // item is the elemt and the i is the index hai 
+    console.log(item);
+});
+
+//forEach((item,index){});
+
+
+//map();
+let double2=arr1.map(x=>x*2);
+console.log(double2);
+
+//here yu can see
+let even=arr1.filter(x=>x%2==0);
+console.log(even);
+
+let find=arr1.find(x => x>40);
+console.log(find);
+
+
+//sorting 
+
+arr1.sort();
+console.log(arr1);
+arr1.sort((a,b)=>a-b);
+console.log(arr1);
+
+for(let val of arr1){
+    console.log(val);
+}
+
+function add(arr1){
+    let sum=0;
+    for(let val of arr1){
+        sum+=val;
+    }
+    return sum;
+}
+let sumi=add(arr1);
+console.log(sumi);
