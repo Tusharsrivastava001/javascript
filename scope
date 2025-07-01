@@ -1,0 +1,28 @@
+console.log(age);
+var age=45;
+
+
+let ok="hnji mai hoon global";
+function show(){
+    console.log(ok);
+}
+show();
+
+
+//functino scope
+function greet(){
+    let name="john";
+    console.log(name);
+}
+greet();
+// console.log(name);
+
+{
+    let a=40;
+    const b=85;
+    var c=60;
+
+}
+// console.log(a); nhi chalega block scope hai 
+// console.log(b);
+console.log(c);
