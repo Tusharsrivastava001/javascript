@@ -35,3 +35,34 @@ console.log(now);
 console.log(specific);
 console.log(fromparts);
 
+
+console.log(now.getFullYear());
+
+console.log(now.getMonth());
+
+console.log(now.getDate());
+
+console.log(now.getHours());
+console.log(now.getMinutes());
+console.log(now.getSeconds());
+console.log(now.getMilliseconds());
+console.log(now.getTime());
+console.log(now.getTimezoneOffset());
+
+
+//DATE FORMATTING
+
+console.log(now.toDateString());
+console.log(now.toTimeString());
+
+
+//Date Arithmetic
+const data =new Date();
+data.setDate(data.getDate()+8);
+
+console.log(data.getDate());
+
+//Now differnce between the dates
+const date1=new Date('2023-01-01');
+const date2=new Date('2024-12-25');
+console.log(Math.abs(date2-date1));
