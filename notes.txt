@@ -1,0 +1,15 @@
+//here i wil be updating all the code n concept of javascript that is required 
+
+`` this is the template literals man used i in the javacript console.log(``) instread of "" to insert the value in it or multi line
+exmaple like 
+console.log(`name ${name}`);
+
+there are two catogiries of the data type in  js man 
+this  is  the  primitve data snap
+let name = "Tushar";      // String
+let age = 21;             // Number
+let isStudent = true;     // Boolean
+let city;                 // Undefined
+let car = null;           // Null
+let big = 1234567890n;    // BigInt
+let id = Symbol("id");    // Symbol
