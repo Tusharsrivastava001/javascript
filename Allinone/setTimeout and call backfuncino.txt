@@ -1,0 +1,13 @@
+for(let i=1;i<=10;i++){
+    setTimeout(function(){console.log(Math.random())},i*50); // take a look
+}
+// here we can use i to print the number after the certain interval
+
+// // okay exacly hua kya 
+// setTimeout(/*here we have to pass an fucntion*/function(){
+//     console.log("Hell0"),/*here we have to pass the time*/2*1000;
+// })
+// setTimeout(function (){
+//     console.log("Mello");
+// },1*1000); // it provide the
+// //SetTimeout(function(){},time);

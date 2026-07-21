@@ -1,0 +1,36 @@
+// Object is the key value pair in the js 
+// it can contain all the data type
+let obj1={name: "John",age: 34,work: "Trader",isittrue: true};
+console.log(obj1);
+console.log(obj1.name);
+console.log(obj1.age);
+console.log(obj1.work);
+console.log(obj1.isittrue);
+
+// dynamically creation of the obect
+const car=new Object();
+car.name="Toyota";
+car.model=788;
+car.launchdate=1988;
+car.price="$3000";
+console.log(car);
+
+function mycar(brand,model,year){
+    this.brand=brand;
+    this.model=model;
+    this.year=year;
+}
+const car1=new mycar("Honda",789,1990);
+console.log(car1);
+car1.name="KIA"
+console.log(car1.name);
+console.log(car1);
+delete car1.name;
+console.log(car1);
+
+// for iteration 
+for(let keys in car1){
+    console.log(`${keys} : ${car1[keys]}`);
+}
+console.log(Object.keys(car)); // object.keys() return the keys of car
+console.log(Object.values(car));

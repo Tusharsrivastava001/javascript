@@ -1,0 +1,6 @@
+//Template literals
+let age=24;
+let exp=4;
+console.log(`My age is ${age} and my experince is ${exp}`); 
+// this is the template varible 
+console.log(`john"copper`); // `` this is called back tick

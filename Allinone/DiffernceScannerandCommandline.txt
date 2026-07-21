@@ -1,0 +1,17 @@
+import java.util.Scanner; //  to take input in the java
+public class commandline {
+    public static void main(String[] args){
+        // here we Gave the arguement before the arguments Runs
+        // How we supposed to do that -- Edit the configuration -- pass the argument
+        if(args.length>0){
+            System.out.println("Programm argument: "+args[0]);
+            System.out.println("Programm argument: "+args[1]);
+            System.out.println("Programm argument: "+args[2]);
+        }
+        // here is scanner while running the programm
+        Scanner sc=new Scanner(System.in); //Scanner wraps System.in to make it
+        System.out.println("Enter the name: ");
+        String name=sc.nextLine();
+        System.out.println("HELLO "+name);
+    }
+}

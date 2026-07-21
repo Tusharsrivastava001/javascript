@@ -1,0 +1,7 @@
+//Here we gonna learnt about triple === 
+a=5; // number
+b='5'; // char // '5' : 53
+console.log(a==b);
+// it convert the in the same type before comparing
+// like here int a and string b it take value form the b and then compare and return true
+console.log(a===b); // see only value 

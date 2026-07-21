@@ -1,0 +1,33 @@
+function Oneto10(n){ // that is the fucntion
+    for(let i=0;i<=n;i++){
+        console.log(i);
+    }
+}
+function add(a,b){
+    return a+b;
+}
+console.log(add(78,99));
+function calculator(a,b){
+    console.log(a+b);
+    console.log(a-b);
+    console.log(a*b);
+    console.log(a/b);
+    
+}
+Oneto10(10);
+calculator(1,2);
+x=-6;
+console.log(Math.abs(x*x*x)); // abs is for the positive 
+console.log(Math.max(22,4,6)); // for the max
+console.log(Math.pow(2,3)); // for the to the power
+
+//Function 
+console.log(Math.sqrt(3.14));
+console.log(Math.pow(1.772004514666935
+,2))
+console.log(Math.cbrt(8));
+console.log(Math.log10(10));
+console.log(Math.floor(-5.2)); // just remove the decimal part 
+console.log(Math.ceil(8.9));
+let v=(Math.random()*21)-10;//  between 0 and 1 ke beech me nunber lake
+console.log(v);
